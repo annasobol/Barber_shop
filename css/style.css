@@ -26,7 +26,8 @@ body{
 	/*background: #d0d0d0;*/
 	background-image: url(../images/background.jpg);
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
+	background-position: 50%;
 	/*background: rgba(0, 0, 0, 0.2);*/
 
 	
@@ -150,7 +151,8 @@ img{
 	padding-bottom: 58px;
 }
 .info-wrap{
-	width: 255px;
+	min-width: 33.3%;
+	width: 33.3%;
 	color: #fff;
 	font-size: 30px;
 }
@@ -163,6 +165,9 @@ img{
 .info-wrap h3{
 	text-align: center;
 	padding-bottom: 22px;
+	flex-direction: column;
+    display: flex;
+    align-items: center;
 }
 .diamond {
     width: 25px;
@@ -182,5 +187,25 @@ img{
     -moz-transform-origin: 0 100%;
     -ms-transform-origin: 0 100%;
     -o-transform-origin: 0 100%;
-    transform-origin: 0 100%;
+
+}
+
+@media(max-width: 768px){
+	.information{
+		flex-wrap: wrap;
+	}
+
+	.info-wrap{
+		width: 50%;
+		min-width: 50%;
+		padding: 15px;
+		justify-content: center;
+	}
+}
+@media(max-width: 520px){
+	.info-wrap{
+		width: 50%;
+		min-width: 100%;
+
+	}
 }
