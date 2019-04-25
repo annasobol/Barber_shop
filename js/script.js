@@ -12,4 +12,17 @@ jQuery(document).ready(function (){
 		$('.navigation ul').toggleClass('active');
 	});
 
+
+	//main slider in
+	var mySwiper = new Swiper('.main-slider', {
+	    speed: 400,
+	   	 autoplay: {
+		    delay: 5000
+		 },
+		 navigation: {
+		    nextEl: '.button-next',
+		    prevEl: '.button-prev',
+		 },
+	});
+
 });

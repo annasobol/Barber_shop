@@ -6,9 +6,10 @@
 	<title>Barber_shop</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body class="home">
 <div class="body-wrapp">
 	<div class="wrapper">
 		<header class="header">
@@ -17,22 +18,23 @@
 					<span class="mobile-menu"></span>
 					<ul>
 						<li class="active"><a href="#">Главная</a></li>
-						<li><a href="#">Информация</a></li>
-						<li><a href="#">Новости</a></li>
-						<li><a href="#">Прайс-лист</a></li>
-						<li><a href="#">Магазин</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li><a href="info.html">Информация</a></li>
+						<li><a href="news.html">Новости</a></li>
+						<li><a href="price-list.html">Прайс-лист</a></li>
+						<li><a href="shop.html">Магазин</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
 					</ul>
-				</nav>
-				<div class="login login1">
+					<div class="login login1">
 					<a href="#">Вход</a>
 				</div>
+				</nav>
+				
 			</div>
 		
 		</header>
-	</div>	
+		
 
-		<div class="main-content">
+		<!-- <div class="main-content"> -->
 			<div class="container">
 				<div class="logo">
 					<img src="images/BORODINSKI-Logo.png" alt="logo">
@@ -60,7 +62,7 @@
 
 				<div class="news-information-1 contacts-wrapp">
 						<div class="news">
-							<h3 class="h3-style">новости</h3>
+							<h3 class="style-30">новости</h3>
 						<div class="p-1-1">	
 							<p class="p-style">нам наконец завезли ягермайстер! теперь вы
 							можете пропустить стаканчик во время стрижки</p>
@@ -78,13 +80,29 @@
 					</div>
 
 						<div class="gallery">
-							<h3 class="h3-style">фотогалерея</h3>
-							<div class="image-wrap">
-								<img src="images/Layer-21.jpg" alt="slaider">
-							</div>
+							<h3 class="style-30">фотогалерея</h3>
+							<div class="gallery-img-wrapp">
+									<!-- Slider main container -->
+		<div class="swiper-container main-slider">
+		  
+		    <div class="swiper-wrapper">
+	
+		        <div class="swiper-slide">
+		        	<img src="images/slide1.jpg" alt="slider">
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="images/slide2.jpg" alt="slider">
+		        </div>
+		        <div class="swiper-slide"><img src="images/slide3.jpg" alt="slider">
+		        </div>
+		   
+		    </div>
+		 
+		</div>
+	</div>
 							<div class="buttons-g">
-								<a class="gallery-g inp-date" href="#">назад</a>
-								<a class=next href="#">вперед</a>
+								<span class="gallery-g button-prev">назад</span>
+								<span class="next button-next">вперед</span>
 							</div>
 						</div>
 				</div>
@@ -93,7 +111,7 @@
 
 				<div class="contact-information contacts-wrapp">
 						<div class="contacts">
-								<h3 class="h3-style">контактная информация</h3>
+								<h3 class="style-30">контактная информация</h3>
 							<div class="p-1">	
 								<p class="p-style">barbershop "borodinski"</p>
 								<p>адрес: г Москва, ул. Собаки павлов, д.13</p>
@@ -111,7 +129,7 @@
 						</div>
 
 						<form class="sign_up">
-							<h3 class="h3-style">записаться</h3>
+							<h3 class="style-30">записаться</h3>
 						<div class="p-1">	
 							<p>укажите желаемую дату и время и мы свяжемся с вами
 							для подтверждения брони</p>
@@ -131,7 +149,7 @@
 
 				</main>
 		</div>
-
+<!-- </div> -->
 		<footer class="footer">
 			<div class="container">
 				<div class="info-footer">	
@@ -159,6 +177,7 @@
 				</div>
 			</div>
 		</footer>
+	
 		<div class="popup-wrapper">
 			<div class="popup-inner">
 				<div class="popup">
@@ -190,8 +209,8 @@
 		</div>
 	</div>
 </div>
-</div>	
 <script src="js/jquery.3.3.1.min.js"></script>
+<script src="js/swiper.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
