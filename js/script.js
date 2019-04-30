@@ -25,4 +25,26 @@ jQuery(document).ready(function (){
 		 },
 	});
 
+//product slider initialization
+	var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 20,
+      slidesPerView: 3,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.gallery-product', {
+      spaceBetween: 10,
+
+      thumbs: {
+        swiper: galleryThumbs
+      }
+    });
+
+lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+
+
 });
